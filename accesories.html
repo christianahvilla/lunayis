@@ -36,6 +36,9 @@
   <div class="offcanvas-menu-overlay"></div>
   <div class="offcanvas-menu-wrapper">
     <ul class="offcanvas__widget">
+      <li><a href="cart.html"><span class="icon_bag_alt"></span>
+          <div id="cart-counter" class="tip">2</div>
+        </a></li>
     </ul>
     <div class="offcanvas__logo">
       <a href="./index.html">
@@ -51,13 +54,13 @@
   <header class="header">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-xl-3 col-lg-2">
+        <div class="col-xl-2 col-lg-2">
           <div class="header__logo">
             <a href="./index.html"><img src="img/back.png" alt=""></a>
             <span>Lunayi's</span>
           </div>
         </div>
-        <div class="col-xl-8 col-lg-8">
+        <div class="col-xl-9 col-lg-9">
           <nav class="header__menu">
             <ul>
               <li><a href="./index.html">Inicio</a></li>
@@ -70,6 +73,16 @@
               <li><a href="./contact.html">Contacto</a></li>
             </ul>
           </nav>
+        </div>
+        <div class="col-xl-1 col-lg-1">
+          <ul class="header__right__widget">
+            <div class="header__right">
+              <li><a href="./cart.html"><span class="icon_bag_alt"></span>
+                  <div id="cart-counter" class="tip">2</div>
+                </a>
+              </li>
+            </div>
+          </ul>
         </div>
       </div>
       <div class="canvas__open">
@@ -104,8 +117,12 @@
               <div class="product__item sale">
                 <div class="product__item__pic set-bg" data-setbg='img/accesories/ac-1.jpg'>
                   <ul class="product__hover">
-                    <li><a href="img/accesories/ac-1.jpg" class="image-popup"><span class="arrow_expand"></span></a>
+                    <li>
+                      <a href="img/accesories/ac-1.jpg" class="image-popup">
+                        <span class="arrow_expand"></span>
+                      </a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 0)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -117,8 +134,13 @@
               <div class="product__item sale">
                 <div class="product__item__pic set-bg" data-setbg='img/accesories/ac-2.jpg'>
                   <ul class="product__hover">
-                    <li><a href="img/accesories/ac-2.jpg" class="image-popup"><span class="arrow_expand"></span></a>
+                    <li>
+                      <a href="img/accesories/ac-2.jpg" class="image-popup">
+                        <span class="arrow_expand">
+                        </span>
+                      </a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 1)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -132,6 +154,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-3.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 2)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -145,6 +168,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-4.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 3)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -158,6 +182,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-5.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 4)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -171,6 +196,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-6.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 5)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -184,6 +210,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-7.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 6)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -197,6 +224,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-8.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 7)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -210,6 +238,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-9.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 8)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -223,6 +252,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-10.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 9)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -236,6 +266,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-11.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 10)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -249,6 +280,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-12.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 11)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -262,6 +294,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-13.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 12)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -275,6 +308,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-14.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 13)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -288,6 +322,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-15.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 14)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -301,6 +336,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-16.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 15)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -314,6 +350,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-17.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 16)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -327,6 +364,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-18.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 17)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -340,6 +378,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-19.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 18)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -353,6 +392,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-20.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 19)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -366,6 +406,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-21.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 20)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -379,6 +420,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-22.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 21)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -392,6 +434,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-23.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 22)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -405,6 +448,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-24.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 23)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -418,6 +462,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-25.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 24)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -431,6 +476,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-26.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 25)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -444,6 +490,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-27.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 26)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -457,6 +504,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-28.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 27)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -470,6 +518,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-29.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 28)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -483,6 +532,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-30.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 29)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -496,6 +546,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-31.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 30)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -509,6 +560,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-32.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 31)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -522,6 +574,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-33.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 32)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -535,6 +588,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-34.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 33)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -548,6 +602,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-35.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 34)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -561,6 +616,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-36.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 35)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -574,6 +630,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-37.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 36)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -587,6 +644,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-38.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 37)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -600,6 +658,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-39.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 38)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -613,6 +672,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-40.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 39)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -626,6 +686,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-41.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 40)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -639,6 +700,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-42.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 41)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -652,6 +714,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-43.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 42)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -665,6 +728,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-44.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 43)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -678,6 +742,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-45.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 44)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -691,6 +756,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-46.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 45)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -704,6 +770,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-47.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 46)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -717,6 +784,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-48.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 47)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -730,6 +798,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-49.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 48)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -743,6 +812,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-50.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 49)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -756,6 +826,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-51.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 50)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -769,6 +840,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-52.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 51)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -782,6 +854,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-53.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 52)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -795,6 +868,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-54.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 53)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -808,6 +882,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-55.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 54)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -821,6 +896,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-56.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 55)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -834,6 +910,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-57.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 56)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -847,6 +924,7 @@
                   <ul class="product__hover">
                     <li><a href="img/accesories/ac-58.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                     </li>
+                    <li><a onclick="addToCart('accesories', 57)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -1011,6 +1089,9 @@
   <script src="js/jquery.slicknav.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/jquery.nicescroll.min.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/shoping.js"></script>
+  <script src="js/loaditems.js"></script>
   <script src="js/main.js"></script>
 </body>
 

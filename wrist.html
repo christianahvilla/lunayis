@@ -36,6 +36,9 @@
   <div class="offcanvas-menu-overlay"></div>
   <div class="offcanvas-menu-wrapper">
     <ul class="offcanvas__widget">
+      <li><a href="cart.html"><span class="icon_bag_alt"></span>
+          <div id="quick-cart-counter" class="tip">2</div>
+        </a></li>
     </ul>
     <div class="offcanvas__logo">
       <a href="./index.html">
@@ -51,13 +54,13 @@
   <header class="header">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-xl-3 col-lg-2">
+        <div class="col-xl-2 col-lg-2">
           <div class="header__logo">
             <a href="./index.html"><img src="img/back.png" alt=""></a>
             <span>Lunayi's</span>
           </div>
         </div>
-        <div class="col-xl-8 col-lg-8">
+        <div class="col-xl-9 col-lg-9">
           <nav class="header__menu">
             <ul>
               <li><a href="./index.html">Inicio</a></li>
@@ -70,6 +73,16 @@
               <li><a href="./contact.html">Contacto</a></li>
             </ul>
           </nav>
+        </div>
+        <div class="col-xl-1 col-lg-1">
+          <ul class="header__right__widget">
+            <div class="header__right">
+              <li><a href="./cart.html"><span class="icon_bag_alt"></span>
+                  <div id="cart-counter" class="tip">2</div>
+                </a>
+              </li>
+            </div>
+          </ul>
         </div>
       </div>
       <div class="canvas__open">
@@ -105,6 +118,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-1.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-1.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 0)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -117,6 +131,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-2.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-2.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 1)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -129,6 +144,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-3.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-3.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 2)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -141,6 +157,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-4.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-4.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 3)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -153,6 +170,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-5.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-5.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 4)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -165,6 +183,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-6.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-6.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 5)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -177,6 +196,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-7.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-7.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 6)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -189,6 +209,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-8.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-8.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 7)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -201,6 +222,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-9.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-9.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 8)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -213,6 +235,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-10.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-10.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 9)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -225,6 +248,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-11.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-11.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 10)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -237,6 +261,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-12.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-12.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 11)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -249,6 +274,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-13.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-13.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 12)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -261,6 +287,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-14.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-14.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 13)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -273,6 +300,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-15.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-15.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 14)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -285,6 +313,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-16.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-16.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 15)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -297,6 +326,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-17.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-17.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 16)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -309,6 +339,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-18.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-18.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 17)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -321,6 +352,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-19.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-19.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 18)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -333,6 +365,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-20.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-20.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 19)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -345,6 +378,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-21.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-21.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 20)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -357,6 +391,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-22.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-22.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 21)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -369,6 +404,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-23.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-23.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 22)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -380,7 +416,8 @@
               <div class="product__item sale">
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-24.jpg'>
                   <ul class="product__hover">
-                    <li><a href="img/wrist/wr-24.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a href="img/wrist/wr-24.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>z
+                    <li><a onclick="addToCart('wrists', 23)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -393,6 +430,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-25.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-25.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 24)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -405,6 +443,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-26.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-26.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 25)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -417,6 +456,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-27.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-27.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 26)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -429,6 +469,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-28.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-28.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 27)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -441,6 +482,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-29.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-29.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 28)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -453,6 +495,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-30.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-30.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 29)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -465,6 +508,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-31.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-31.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 30)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -477,6 +521,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-32.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-32.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 31)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -489,6 +534,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-33.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-33.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 32)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -501,6 +547,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-34.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-34.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 33)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -513,6 +560,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-35.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-35.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 34)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -525,6 +573,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-36.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-36.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 35)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -537,6 +586,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-37.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-37.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 36)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -549,6 +599,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-38.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-38.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 37)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -561,6 +612,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-39.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-39.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 38)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -573,6 +625,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-40.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-40.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 39)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -585,6 +638,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-41.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-41.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 40)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -597,6 +651,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-42.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-42.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 41)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -609,6 +664,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-43.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-43.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 42)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -621,6 +677,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-44.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-44.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 43)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -633,6 +690,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-45.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-45.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 44)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -645,6 +703,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-46.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-46.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 45)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -657,6 +716,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-47.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-47.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 46)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -669,6 +729,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-48.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-48.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 47)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -681,6 +742,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-49.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-49.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists',48)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -693,6 +755,7 @@
                 <div class="product__item__pic set-bg" data-setbg='img/wrist/wr-50.jpg'>
                   <ul class="product__hover">
                     <li><a href="img/wrist/wr-50.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a onclick="addToCart('wrists', 49)"><span class="icon_bag_alt"></span></a></li>
                   </ul>
                 </div>
                 <div class="product__item__text">
@@ -857,6 +920,9 @@
   <script src="js/jquery.slicknav.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/jquery.nicescroll.min.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/shoping.js"></script>
+  <script src="js/loaditems.js"></script>
   <script src="js/main.js"></script>
 </body>
 
