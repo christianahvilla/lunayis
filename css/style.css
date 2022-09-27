@@ -328,7 +328,7 @@ ol {
 }
 
 .header__logo {
-  padding: 26px 0 10px 0;
+  padding: 15px 0 15px 0;
   display: grid;
   grid-template-columns: max-content min-content;
 }
@@ -346,6 +346,11 @@ ol {
 
 .header__menu {
   padding: 30px 0 27px;
+}
+
+.header__menu ul {
+  display: flex;
+  justify-content: center;
 }
 
 .header__menu ul li {
@@ -1135,6 +1140,10 @@ ol {
 .product {
   padding-top: 60px;
   padding-bottom: 50px;
+}
+
+.product__hover li a:hover {
+  cursor: pointer !important;
 }
 
 .filter__controls {
@@ -2205,6 +2214,11 @@ ol {
   h6 {
   color: #111111;
   font-weight: 600;
+}
+
+.cart__product__item img {
+  height: 90px;
+  width: 90px;
 }
 
 .shop__cart__table
@@ -3426,8 +3440,9 @@ ol {
     margin-bottom: 25px;
   }
   .offcanvas__widget {
-    text-align: center;
+    text-align: right;
     margin-bottom: 20px;
+    padding-right: 30px;
   }
   .offcanvas__widget li {
     list-style: none;

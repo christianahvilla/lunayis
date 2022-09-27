@@ -35,12 +35,15 @@
   <!-- Offcanvas Menu Begin -->
   <div class="offcanvas-menu-overlay"></div>
   <div class="offcanvas-menu-wrapper">
+    <div class="offcanvas__close">+</div>
     <ul class="offcanvas__widget">
+      <li><a href="cart.html"><span class="icon_bag_alt"></span>
+          <div id="quick-cart-counter" class="tip">2</div>
+        </a></li>
     </ul>
     <div class="offcanvas__logo">
       <a href="./index.html">
         <img src="img/back.png" alt="">
-        <span>Lunayi's</span>
       </a>
     </div>
     <div id="mobile-menu-wrap"></div>
@@ -51,13 +54,13 @@
   <header class="header">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-xl-3 col-lg-2">
+        <div class="col-xl-2 col-lg-2">
           <div class="header__logo">
             <a href="./index.html"><img src="img/back.png" alt=""></a>
             <span>Lunayi's</span>
           </div>
         </div>
-        <div class="col-xl-8 col-lg-8">
+        <div class="col-xl-9 col-lg-9">
           <nav class="header__menu">
             <ul>
               <li class="active"><a href="./index.html">Inicio</a></li>
@@ -70,6 +73,16 @@
               <li><a href="./contact.html">Contacto</a></li>
             </ul>
           </nav>
+        </div>
+        <div class="col-xl-1 col-lg-1">
+          <ul class="header__right__widget">
+            <div class="header__right">
+              <li><a href="./cart.html"><span class="icon_bag_alt"></span>
+                  <div id="cart-counter" class="tip">2</div>
+                </a>
+              </li>
+            </div>
+          </ul>
         </div>
       </div>
       <div class="canvas__open">
@@ -97,7 +110,7 @@
               <div class="categories__item set-bg" data-setbg="img/categories/category-10.jpg">
                 <div class="categories__text">
                   <h4>Pulseras</h4>
-                  <a href="./promocional.html">Detalles</a>
+                  <a href="./wrist.html">Detalles</a>
                 </div>
               </div>
             </div>
@@ -105,7 +118,7 @@
               <div class="categories__item set-bg" data-setbg="img/categories/category-7.jpg">
                 <div class="categories__text">
                   <h4>Anillos</h4>
-                  <a href="#">Detalles</a>
+                  <a href="/rings.html">Detalles</a>
                 </div>
               </div>
             </div>
@@ -113,7 +126,7 @@
               <div class="categories__item set-bg" data-setbg="img/categories/category-8.jpg">
                 <div class="categories__text">
                   <h4>Aretes</h4>
-                  <a href="#">Detalles</a>
+                  <a href="/earring.html">Detalles</a>
                 </div>
               </div>
             </div>
@@ -121,7 +134,7 @@
               <div class="categories__item set-bg" data-setbg="img/categories/category-9.jpg">
                 <div class="categories__text">
                   <h4>Collares</h4>
-                  <a href="#">Detalles</a>
+                  <a href="/necklaces.html">Detalles</a>
                 </div>
               </div>
             </div>
@@ -145,105 +158,113 @@
       <div class="row property__gallery">
         <div class="col-lg-3 col-md-4 col-sm-6 mix women">
           <div class="product__item">
-            <div class="product__item__pic set-bg" data-setbg="img/new-products/new-prod-1.jpg">
+            <div class="product__item__pic set-bg" data-setbg="img/news/new-prod-1.jpg">
               <ul class="product__hover">
-                <li><a href="img/new-products/new-prod-1.jpg" class="image-popup"><span class="arrow_expand"></span></a>
+                <li><a href="img/news/new-prod-1.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                 </li>
+                <li><a onclick="addToCart('news', 0)"><span class="icon_bag_alt"></span></a></li>
               </ul>
             </div>
             <div class="product__item__text">
-              <h6><a href="#">Aretes de Moño</a></h6>
+              <h6>Aretes de Moño</h6>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 mix men">
           <div class="product__item">
-            <div class="product__item__pic set-bg" data-setbg="img/new-products/new-prod-2.jpg">
+            <div class="product__item__pic set-bg" data-setbg="img/news/new-prod-2.jpg">
               <ul class="product__hover">
-                <li><a href="img/new-products/new-prod-2.jpg" class="image-popup"><span class="arrow_expand"></span></a>
+                <li><a href="img/news/new-prod-2.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                 </li>
+                <li><a onclick="addToCart('news', 1)"><span class="icon_bag_alt"></span></a></li>
               </ul>
             </div>
             <div class="product__item__text">
-              <h6><a href="#">Anillos Variados</a></h6>
+              <h6>Anillos Variados</h6>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 mix accessories">
           <div class="product__item">
-            <div class="product__item__pic set-bg" data-setbg="img/new-products/new-prod-3.jpg">
+            <div class="product__item__pic set-bg" data-setbg="img/news/new-prod-3.jpg">
               <ul class="product__hover">
-                <li><a href="img/new-products/new-prod-3.jpg" class="image-popup"><span class="arrow_expand"></span></a>
+                <li><a href="img/new-prod/new-prod-3.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                 </li>
+                <li><a onclick="addToCart('news', 2)"><span class="icon_bag_alt"></span></a></li>
               </ul>
             </div>
             <div class="product__item__text">
-              <h6><a href="#">Pulseras de Gato</a></h6>
+              <h6>Pulseras de Gato</h6>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 mix cosmetic">
           <div class="product__item">
-            <div class="product__item__pic set-bg" data-setbg="img/new-products/new-prod-4.jpg">
+            <div class="product__item__pic set-bg" data-setbg="img/news/new-prod-4.jpg">
               <ul class="product__hover">
-                <li><a href="img/new-products/new-prod-4.jpg" class="image-popup"><span class="arrow_expand"></span></a>
+                <li><a href="img/news/new-prod-4.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                 </li>
+                <li><a onclick="addToCart('news', 3)"><span class="icon_bag_alt"></span></a></li>
               </ul>
             </div>
             <div class="product__item__text">
-              <h6><a href="#">Collar de Corazón</a></h6>
+              <h6>Collar de Corazón</h6>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 mix kid">
           <div class="product__item">
-            <div class="product__item__pic set-bg" data-setbg="img/new-products/new-prod-5.jpg">
+            <div class="product__item__pic set-bg" data-setbg="img/news/new-prod-5.jpg">
               <ul class="product__hover">
-                <li><a href="img/new-products/new-prod-5.jpg" class="image-popup"><span class="arrow_expand"></span></a>
+                <li><a href="img/news/new-prod-5.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                 </li>
+                <li><a onclick="addToCart('news', 4)"><span class="icon_bag_alt"></span></a></li>
               </ul>
             </div>
             <div class="product__item__text">
-              <h6><a href="#">Broche de Araña</a></h6>
+              <h6>Broche de Araña</h6>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 mix women men kid accessories cosmetic">
           <div class="product__item sale">
-            <div class="product__item__pic set-bg" data-setbg="img/new-products/new-prod-6.jpg">
+            <div class="product__item__pic set-bg" data-setbg="img/news/new-prod-6.jpg">
               <ul class="product__hover">
-                <li><a href="img/new-products/new-prod-6.jpg" class="image-popup"><span class="arrow_expand"></span></a>
+                <li><a href="img/news/new-prod-6.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                 </li>
+                <li><a onclick="addToCart('news', 5)"><span class="icon_bag_alt"></span></a></li>
               </ul>
             </div>
             <div class="product__item__text">
-              <h6><a href="#">Lentes de Sol</a></h6>
+              <h6>Lentes de Sol</h6>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 mix women men kid accessories cosmetic">
           <div class="product__item">
-            <div class="product__item__pic set-bg" data-setbg="img/new-products/new-prod-7.jpg">
+            <div class="product__item__pic set-bg" data-setbg="img/news/new-prod-7.jpg">
               <ul class="product__hover">
-                <li><a href="img/new-products/new-prod-7.jpg" class="image-popup"><span class="arrow_expand"></span></a>
+                <li><a href="img/news/new-prod-7.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                 </li>
+                <li><a onclick="addToCart('news', 6)"><span class="icon_bag_alt"></span></a></li>
               </ul>
             </div>
             <div class="product__item__text">
-              <h6><a href="#">Tobilleras Variadas</a></h6>
+              <h6>Tobilleras Variadas</h6>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 mix women men kid accessories cosmetic">
           <div class="product__item sale">
-            <div class="product__item__pic set-bg" data-setbg="img/new-products/new-prod-8.jpg">
+            <div class="product__item__pic set-bg" data-setbg="img/news/new-prod-8.jpg">
               <ul class="product__hover">
-                <li><a href="img/new-products/new-prod-8.jpg" class="image-popup"><span class="arrow_expand"></span></a>
+                <li><a href="img/news/new-prod-8.jpg" class="image-popup"><span class="arrow_expand"></span></a>
                 </li>
+                <li><a onclick="addToCart('news', 7)"><span class="icon_bag_alt"></span></a></li>
               </ul>
             </div>
             <div class="product__item__text">
-              <h6><a href="#">Mochila de Cactus</a></h6>
+              <h6>Mochila de Cactus</h6>
             </div>
           </div>
         </div>
@@ -560,6 +581,9 @@
   <script src="js/jquery.slicknav.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/jquery.nicescroll.min.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/shoping.js"></script>
+  <script src="js/loaditems.js"></script>
   <script src="js/main.js"></script>
 </body>
 
